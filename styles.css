@@ -1,0 +1,285 @@
+/* =======================
+   Global Styles
+======================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* =======================
+   Header & Navigation
+======================= */
+header {
+  background: #00695c;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header img {
+  max-width: 60px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffd600;
+}
+
+/* =======================
+   Hero Section
+======================= */
+.hero {
+  background: url("Images/FB_IMG_1756775549013.jpg") no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* =======================
+   Sections
+======================= */
+section {
+  padding: 3rem 2rem;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #00695c;
+}
+
+section p {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+/* =======================
+   Services / Programs
+======================= */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.service-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* =======================
+   Gallery
+======================= */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+}
+
+.lightbox img {
+  display: block;
+  max-width: 90%;
+  max-height: 80%;
+  margin: 5% auto;
+  border-radius: 10px;
+}
+
+/* =======================
+   Donation & Forms
+======================= */
+form {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+form input, form textarea, form select {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #00695c;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #004d40;
+}
+
+/* Donation Buttons */
+.donation-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.donation-buttons a {
+  background: #ffd600;
+  padding: 0.8rem 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.donation-buttons a:hover {
+  background: #ffca28;
+}
+
+/* =======================
+   Footer
+======================= */
+footer {
+  background: #00695c;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+/* =======================
+   Floating WhatsApp Button
+======================= */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 5px #999;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.whatsapp-float:hover {
+  background-color: #20b954;
+}
+
+/* =======================
+   Responsive
+======================= */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  }
