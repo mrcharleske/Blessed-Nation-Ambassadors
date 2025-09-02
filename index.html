@@ -1,196 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Blessed Nation Ambassadors — Empowering Communities since 2017</title>
-
-  <!-- SEO -->
-  <meta name="description" content="Blessed Nation Ambassadors (founded in 2017 by Lydia Waweru) serves orphans, widows, street families and vulnerable communities in Kenya through feeding programs, academic sponsorship for children living with disabilities, youth empowerment, and farmers & SMEs support." />
-  <meta name="keywords" content="Blessed Nation Ambassadors, Lydia Waweru, Kenya charity, feeding programs, disability sponsorship, youth empowerment, farmers support, SMEs empowerment, donate" />
-  <meta name="author" content="Blessed Nation Ambassadors" />
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="Images/47e9737984de079_file_000000009db461fd9a258cbe5c39906c_wm.png" />
-
-  <!-- Inline CSS so page looks correct immediately -->
-  <style>
-    :root{
-      --brand:#1E3A8A; --brand-2:#0EA5E9; --accent:#FACC15;
-      --bg:#F9FAFB; --card:#fff; --text:#111827; --muted:#6B7280;
-      --wa:#25d366;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;color:var(--text);background:var(--bg);line-height:1.6}
-    header{position:sticky;top:0;background:linear-gradient(90deg,var(--brand),var(--brand-2));padding:10px 14px;z-index:60;box-shadow:0 6px 20px rgba(0,0,0,.12)}
-    .nav{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
-    .logo img{height:44px}
-    .menu{display:flex;gap:10px;align-items:center}
-    .menu a{color:#fff;text-decoration:none;font-weight:600;padding:8px 10px;border-radius:8px;transition:background .15s}
-    .menu a:hover{background:rgba(255,255,255,.08)}
-
-    .hero{position:relative; background-image:url('Images/FB_IMG_1756775549013.jpg'); background-size:cover; background-position:center; min-height:360px; display:flex;align-items:center; justify-content:center; text-align:center; color:#fff}
-    .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(30,58,138,.6), rgba(14,165,233,.45));}
-    .hero-inner{position:relative;z-index:2;padding:48px 18px;max-width:920px}
-    .hero h1{margin:0;font-size:2.1rem}
-    .hero p{max-width:760px;margin:12px auto 18px;opacity:.95}
-    .btn-hero{background:var(--accent);color:#111;padding:12px 18px;border-radius:999px;text-decoration:none;font-weight:800;box-shadow:0 10px 22px rgba(250,204,21,.28)}
-    .btn-hero:hover{transform:translateY(-2px)}
-
-    section{padding:40px 16px}
-    .wrap{max-width:1100px;margin:0 auto}
-
-    .about-box{background:var(--card);border-radius:12px;padding:16px;box-shadow:0 10px 26px rgba(0,0,0,.06)}
-    .about-box h2{color:var(--brand);margin-top:0}
-    .about-box p{margin:.6em 0}
-
-    .grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
-    .card{background:var(--card);border-radius:12px;overflow:hidden;box-shadow:0 10px 26px rgba(0,0,0,.06);transition:transform .18s}
-    .card:hover{transform:translateY(-6px)}
-    .card img{width:100%;height:150px;object-fit:cover;display:block}
-    .pad{padding:12px}
-    .card h3{margin:0 0 8px;color:var(--brand)}
-    .muted{color:var(--muted);font-size:.95rem}
-
-    .row{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
-    .thumb{border-radius:10px;overflow:hidden;background:#fff;box-shadow:0 8px 24px rgba(0,0,0,.06);height:120px}
-    .thumb img{width:100%;height:100%;object-fit:cover}
-
-    .strip{background:linear-gradient(90deg,var(--brand),var(--brand-2));color:#fff;padding:14px;border-radius:10px;text-align:center;margin:18px 0}
-
-    footer{background:#071126;color:#cbd5e1;padding:20px 12px;text-align:center}
-
-    /* WhatsApp float */
-    .wa{position:fixed;right:16px;bottom:16px;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--wa);box-shadow:0 10px 26px rgba(37,211,102,.35);z-index:1200;animation:wa-pulse 2.2s infinite}
-    .wa img{width:34px;height:34px}
-    @keyframes wa-pulse{0%{transform:scale(1)}50%{transform:scale(1.06)}100%{transform:scale(1)}}
-
-    @media (max-width:520px){ .hero{min-height:300px} .hero h1{font-size:1.6rem} .card img{height:120px} }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blessed Nation Ambassadors</title>
+  <meta name="description" content="Blessed Nation Ambassadors – Transforming lives through education, empowerment, and outreach. Come, let’s make this work together.">
+  <link rel="icon" type="image/png" href="Images/47e9737984de079_file_000000009db461fd9a258cbe5c39906c_wm.png">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Header/nav -->
+  <!-- Header -->
   <header>
-    <div class="nav">
-      <a href="index.html" aria-label="home" class="logo"><img src="Images/47e9737984de079_file_000000009db461fd9a258cbe5c39906c_wm.png" alt="Blessed Nation Ambassadors logo"></a>
-      <nav class="menu" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="blog.html">Blog</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="donate.html" style="background:#fff;color:#111;border-radius:999px;padding:6px 10px;font-weight:800">Donate</a>
-        <a href="contact.html">Contact</a>
+    <div class="container">
+      <img src="Images/47e9737984de079_file_000000009db461fd9a258cbe5c39906c_wm.png" alt="Blessed Nation Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="donations.html">Donations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero" role="banner">
-    <div class="hero-inner">
-      <h1>Together, we restore hope & dignity</h1>
-      <p>Since 2017 Blessed Nation Ambassadors (founded by Lydia Waweru) has served the less fortunate through feeding, mentorship, empowerment, and academic sponsorships for children living with disabilities.</p>
-      <!-- ONE clear CTA in hero only -->
-      <p><a class="btn-hero" href="donate.html">Donate Now</a></p>
+  <!-- Hero Section -->
+  <section class="hero" style="background-image: url('Images/FB_IMG_1756775549013.jpg');">
+    <div class="hero-text">
+      <h1>Welcome to Blessed Nation Ambassadors</h1>
+      <p>Together, we can transform lives. <br> Come, let’s make this work — when we come together, great things happen.</p>
+      <a href="donations.html" class="btn">Support Our Mission</a>
     </div>
   </section>
 
-  <!-- About summary -->
-  <section>
-    <div class="wrap">
-      <div class="about-box">
-        <h2>About Blessed Nation Ambassadors</h2>
-        <p>Founded by Lydia Waweru in 2017, we walk with widows, orphans, street families, children with disabilities, youth, farmers and small business owners — providing food, education sponsorships, mentorship and skills so people can thrive.</p>
-        <p class="muted">“Religion that is pure and undefiled… to visit orphans and widows in their affliction.” — James 1:27</p>
-      </div>
+  <!-- About Section (short) -->
+  <section class="about-home">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>We are a community-driven organization uplifting lives through education, empowerment, and outreach programs, including sponsoring children living with disabilities academically.</p>
+      <a href="about.html" class="btn">Learn More</a>
     </div>
   </section>
 
-  <!-- Services (short preview, no extra CTAs) -->
-  <section>
-    <div class="wrap">
-      <h3 style="color:var(--brand);margin:0 0 12px">Our Programs (summary)</h3>
-      <div class="grid">
-        <article class="card">
-          <img src="Images/FB_IMG_1756775373683.jpg" alt="Outreach">
-          <div class="pad"><h3>Outreach</h3><p class="muted">Visits and food for street families, orphans & widows.</p></div>
-        </article>
-
-        <article class="card">
-          <img src="Images/FB_IMG_1756760806122.jpg" alt="Feeding">
-          <div class="pad"><h3>Feeding Programs</h3><p class="muted">Regular feeding drives that restore strength and dignity.</p></div>
-        </article>
-
-        <article class="card">
-          <img src="Images/FB_IMG_1756735600172.jpg" alt="Disability">
-          <div class="pad"><h3>Disability Support</h3><p class="muted">Academic sponsorship & inclusion for children living with disabilities.</p></div>
-        </article>
-
-        <article class="card">
-          <img src="Images/FB_IMG_1756736200372.jpg" alt="Youth">
-          <div class="pad"><h3>Youth Empowerment</h3><p class="muted">Mentorship, training and guidance for young people.</p></div>
-        </article>
-
-        <div class="card pad">
-          <div style="padding:12px;">
-            <h3>Farmers Support</h3>
-            <p class="muted">Training, market linkages and resources to build sustainable farming livelihoods.</p>
-          </div>
-        </div>
-
-        <div class="card pad">
-          <div style="padding:12px;">
-            <h3>SMEs Empowerment</h3>
-            <p class="muted">Business skills and mentorship for small enterprises to grow.</p>
-          </div>
-        </div>
-      </div>
+  <!-- Services Section (short) -->
+  <section class="services-home">
+    <div class="container">
+      <h2>Our Services</h2>
+      <p>We empower communities through feeding programs, disability support, youth empowerment, and outreach. Together, we are building hope and opportunity.</p>
+      <a href="services.html" class="btn">Explore Services</a>
     </div>
   </section>
-
-  <!-- Gallery preview (images only; no button) -->
-  <section>
-    <div class="wrap">
-      <h3 style="color:var(--brand); margin:0 0 12px">Moments of Impact</h3>
-      <div class="row">
-        <div class="thumb"><img src="Images/FB_IMG_1756735575300.jpg" alt="Gallery 1"></div>
-        <div class="thumb"><img src="Images/FB_IMG_1756736071168.jpg" alt="Gallery 2"></div>
-        <div class="thumb"><img src="Images/FB_IMG_1756736096847.jpg" alt="Gallery 3"></div>
-        <div class="thumb"><img src="Images/FB_IMG_1756760616834.jpg" alt="Gallery 4"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Blog preview (titles + short summary; no button) -->
-  <section>
-    <div class="wrap">
-      <h3 style="color:var(--brand); margin:0 0 12px">Stories & Updates</h3>
-      <div class="grid">
-        <div class="card"><img src="Images/FB_IMG_1756760496801.jpg" alt="Blog 1"><div class="pad"><h3>A Meal of Hope</h3><p class="muted">How our feeding program restores dignity.</p></div></div>
-        <div class="card"><img src="Images/FB_IMG_1756735694791.jpg" alt="Blog 2"><div class="pad"><h3>Rising Youth</h3><p class="muted">Mentorship that unlocks potential.</p></div></div>
-        <div class="card"><img src="Images/FB_IMG_1756761373248.jpg" alt="Blog 3"><div class="pad"><h3>Love on the Streets</h3><p class="muted">Outreach moments that bring hope.</p></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Donate strip removed (only hero CTA available) -->
 
   <!-- Footer -->
   <footer>
-    <div class="wrap">
-      <div style="padding:8px 0">&copy; <span id="yr"></span> Blessed Nation Ambassadors</div>
-      <div style="padding:6px 0">Email: <a href="mailto:blessednationambassadors@gmail.com" style="color:#cfe9ff">blessednationambassadors@gmail.com</a> · <a href="contact.html" style="color:#cfe9ff">Contact & Socials</a></div>
-    </div>
+    <p>&copy; 2025 Blessed Nation Ambassadors. All Rights Reserved.</p>
   </footer>
 
-  <!-- Floating WhatsApp -->
-  <a class="wa" href="https://wa.me/254712972035" target="_blank" aria-label="Chat on WhatsApp">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/254712972035" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
   </a>
 
-  <script>
-    document.getElementById('yr').textContent = new Date().getFullYear();
-  </script>
 </body>
-                                                                                                                                                                                   </html>
+</html>
