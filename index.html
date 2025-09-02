@@ -5,324 +5,192 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Blessed Nation Ambassadors — Empowering Communities since 2017</title>
 
-  <!-- Primary SEO -->
-  <meta name="description" content="Blessed Nation Ambassadors (founded in 2017 by Lydia Waweru) serves orphans, widows, street families and vulnerable communities in Kenya through feeding programs, youth empowerment, academic sponsorship for children living with disabilities, and farmers & SMEs support." />
-  <meta name="keywords" content="Blessed Nation Ambassadors, Lydia Waweru, Kenya NGO, feeding programs, disability sponsorship, youth empowerment, farmers support, SMEs empowerment, donations" />
+  <!-- SEO -->
+  <meta name="description" content="Blessed Nation Ambassadors (founded in 2017 by Lydia Waweru) serves orphans, widows, street families and vulnerable communities in Kenya through feeding programs, academic sponsorship for children living with disabilities, youth empowerment, and farmers & SMEs support." />
+  <meta name="keywords" content="Blessed Nation Ambassadors, Lydia Waweru, Kenya charity, feeding programs, disability sponsorship, youth empowerment, farmers support, SMEs empowerment, donate" />
   <meta name="author" content="Blessed Nation Ambassadors" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Blessed Nation Ambassadors" />
-  <meta property="og:description" content="Feeding programs, disability support & academic sponsorships, youth empowerment, and farmers & SMEs uplift — join us to transform lives." />
-  <meta property="og:image" content="Images/FB_IMG_1756775549013.jpg" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://your-github-pages-url-here" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Blessed Nation Ambassadors" />
-  <meta name="twitter:description" content="Founded by Lydia Waweru in 2017 — serving the less fortunate with dignity and hope." />
-  <meta name="twitter:image" content="Images/FB_IMG_1756775549013.jpg" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="Images/47e9737984de079_file_000000009db461fd9a258cbe5c39906c_wm.png" />
 
-  <!-- Inline styles (keeps everything in one file for easy upload from phone) -->
+  <!-- Inline CSS so page looks correct immediately -->
   <style>
     :root{
-      --brand:#1E3A8A;
-      --brand-2:#0EA5E9;
-      --accent:#FACC15;
-      --text:#111827;
-      --muted:#6B7280;
-      --bg:#F9FAFB;
-      --card:#FFFFFF;
+      --brand:#1E3A8A; --brand-2:#0EA5E9; --accent:#FACC15;
+      --bg:#F9FAFB; --card:#fff; --text:#111827; --muted:#6B7280;
       --wa:#25d366;
     }
     *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family:system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;
-      color:var(--text);
-      background:var(--bg);
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      line-height:1.6;
-    }
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;color:var(--text);background:var(--bg);line-height:1.6}
+    header{position:sticky;top:0;background:linear-gradient(90deg,var(--brand),var(--brand-2));padding:10px 14px;z-index:60;box-shadow:0 6px 20px rgba(0,0,0,.12)}
+    .nav{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+    .logo img{height:44px}
+    .menu{display:flex;gap:10px;align-items:center}
+    .menu a{color:#fff;text-decoration:none;font-weight:600;padding:8px 10px;border-radius:8px;transition:background .15s}
+    .menu a:hover{background:rgba(255,255,255,.08)}
 
-    /* ===== Header / Nav ===== */
-    header{
-      position:sticky; top:0; z-index:60;
-      background:linear-gradient(90deg,var(--brand),var(--brand-2));
-      padding:10px 14px;
-      box-shadow:0 6px 20px rgba(0,0,0,.12);
-    }
-    .nav-wrap{ max-width:1100px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:12px;}
-    .logo img{ height:44px; display:block }
-    .main-nav{ display:flex; gap:8px; align-items:center; }
-    .main-nav a{
-      color:#fff; text-decoration:none; font-weight:600; padding:8px 10px; border-radius:10px; font-size:.95rem;
-      transition:transform .18s, background .18s;
-    }
-    .main-nav a:hover{ background:rgba(255,255,255,.12); transform:translateY(-2px) }
+    .hero{position:relative; background-image:url('Images/FB_IMG_1756775549013.jpg'); background-size:cover; background-position:center; min-height:360px; display:flex;align-items:center; justify-content:center; text-align:center; color:#fff}
+    .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(30,58,138,.6), rgba(14,165,233,.45));}
+    .hero-inner{position:relative;z-index:2;padding:48px 18px;max-width:920px}
+    .hero h1{margin:0;font-size:2.1rem}
+    .hero p{max-width:760px;margin:12px auto 18px;opacity:.95}
+    .btn-hero{background:var(--accent);color:#111;padding:12px 18px;border-radius:999px;text-decoration:none;font-weight:800;box-shadow:0 10px 22px rgba(250,204,21,.28)}
+    .btn-hero:hover{transform:translateY(-2px)}
 
-    /* Mobile nav collapse */
-    @media (max-width:720px){
-      .main-nav{ display:flex; gap:5px; font-size:.92rem; }
-      .logo img{ height:40px }
-    }
+    section{padding:40px 16px}
+    .wrap{max-width:1100px;margin:0 auto}
 
-    /* ===== Hero ===== */
-    .hero{
-      position:relative; overflow:hidden;
-      min-height:380px;
-      background-image:url('Images/FB_IMG_1756775549013.jpg');
-      background-size:cover; background-position:center;
-      display:flex; align-items:center; justify-content:center; text-align:center;
-    }
-    .hero::after{
-      content:""; position:absolute; inset:0;
-      background:linear-gradient(180deg, rgba(30,58,138,.55), rgba(14,165,233,.55));
-    }
-    .hero-inner{
-      position:relative; z-index:2; padding:48px 18px; color:#fff; max-width:980px;
-    }
-    .hero h1{ font-size:2.1rem; margin:0 0 12px; line-height:1.08 }
-    .hero p{ margin:0 auto 18px; max-width:760px; font-size:1.02rem; opacity:.98 }
-    .btn-cta{
-      display:inline-block; background:var(--accent); color:#111827; font-weight:800; padding:12px 18px; border-radius:999px; text-decoration:none;
-      box-shadow:0 10px 22px rgba(250,204,21,.28); transition:transform .16s;
-    }
-    .btn-cta:hover{ transform:translateY(-3px) }
+    .about-box{background:var(--card);border-radius:12px;padding:16px;box-shadow:0 10px 26px rgba(0,0,0,.06)}
+    .about-box h2{color:var(--brand);margin-top:0}
+    .about-box p{margin:.6em 0}
 
-    /* ===== Sections general ===== */
-    section{ padding:44px 14px; }
-    .wrap{ max-width:1100px; margin:0 auto; }
+    .grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+    .card{background:var(--card);border-radius:12px;overflow:hidden;box-shadow:0 10px 26px rgba(0,0,0,.06);transition:transform .18s}
+    .card:hover{transform:translateY(-6px)}
+    .card img{width:100%;height:150px;object-fit:cover;display:block}
+    .pad{padding:12px}
+    .card h3{margin:0 0 8px;color:var(--brand)}
+    .muted{color:var(--muted);font-size:.95rem}
 
-    /* About block */
-    .about-box{
-      background:var(--card); border-radius:14px; padding:18px; box-shadow:0 10px 30px rgba(2,6,23,.06)
-    }
-    .about-box h2{ color:var(--brand); margin:6px 0 8px }
-    .verse{ margin-top:12px; font-style:italic; color:var(--brand); background:#EFF6FF; border-left:4px solid var(--brand); padding:10px 12px; border-radius:8px; }
+    .row{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+    .thumb{border-radius:10px;overflow:hidden;background:#fff;box-shadow:0 8px 24px rgba(0,0,0,.06);height:120px}
+    .thumb img{width:100%;height:100%;object-fit:cover}
 
-    /* Services grid */
-    .grid{ display:grid; gap:16px; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)) }
-    .service-card{
-      background:var(--card); border-radius:12px; overflow:hidden; box-shadow:0 10px 26px rgba(2,6,23,.06); transition:transform .18s;
-    }
-    .service-card:hover{ transform:translateY(-6px) }
-    .service-card img{ width:100%; height:160px; object-fit:cover; display:block }
-    .service-card .pad{ padding:12px 14px }
-    .service-card h3{ margin:0 0 6px; color:var(--brand) }
-    .muted{ color:var(--muted); font-size:.95rem }
+    .strip{background:linear-gradient(90deg,var(--brand),var(--brand-2));color:#fff;padding:14px;border-radius:10px;text-align:center;margin:18px 0}
 
-    /* Farmers & SMEs text cards styling */
-    .text-card{ padding:18px; border-radius:12px; background:linear-gradient(180deg,#fff,#fbfbff); box-shadow:0 8px 20px rgba(2,6,23,.04) }
+    footer{background:#071126;color:#cbd5e1;padding:20px 12px;text-align:center}
 
-    /* Gallery / Blog preview rows */
-    .row{ display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)) }
-    .thumb{ border-radius:12px; overflow:hidden; box-shadow:0 10px 24px rgba(2,6,23,.06) }
-    .thumb img{ width:100%; height:150px; object-fit:cover; display:block }
+    /* WhatsApp float */
+    .wa{position:fixed;right:16px;bottom:16px;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--wa);box-shadow:0 10px 26px rgba(37,211,102,.35);z-index:1200;animation:wa-pulse 2.2s infinite}
+    .wa img{width:34px;height:34px}
+    @keyframes wa-pulse{0%{transform:scale(1)}50%{transform:scale(1.06)}100%{transform:scale(1)}}
 
-    /* CTA strip */
-    .strip{ background:linear-gradient(90deg,var(--brand),var(--brand-2)); color:#fff; border-radius:12px; padding:18px; text-align:center; box-shadow:0 10px 26px rgba(2,6,23,.08) }
-    .strip b{ color:#fff; background:rgba(0,0,0,.06); padding:4px 8px; border-radius:6px }
-
-    /* Footer */
-    footer{ background:#071126; color:#cbd5e1; text-align:center; padding:18px 12px }
-    footer a{ color:#cbd5e1; text-decoration:none }
-    footer a:hover{ text-decoration:underline }
-
-    /* Floating WhatsApp */
-    .wa{
-      position:fixed; right:16px; bottom:16px; z-index:1200;
-      width:60px; height:60px; border-radius:50%; display:grid; place-items:center;
-      background:var(--wa); box-shadow:0 10px 26px rgba(37,211,102,.35);
-      animation:wa-pulse 2.2s infinite;
-    }
-    .wa img{ width:34px; height:34px; display:block }
-    @keyframes wa-pulse{
-      0%{ transform:scale(1) }
-      50%{ transform:scale(1.06) }
-      100%{ transform:scale(1) }
-    }
-
-    /* Small screens adjustments */
-    @media (max-width:520px){
-      .hero{ min-height:340px }
-      .hero h1{ font-size:1.6rem }
-      .hero p{ font-size:.98rem }
-    }
+    @media (max-width:520px){ .hero{min-height:300px} .hero h1{font-size:1.6rem} .card img{height:120px} }
   </style>
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- Header/nav -->
   <header>
-    <div class="nav-wrap">
-      <div class="logo">
-        <a href="index.html" aria-label="Blessed Nation Ambassadors home">
-          <img src="Images/47e9737984de079_file_000000009db461fd9a258cbe5c39906c_wm.png" alt="Blessed Nation Ambassadors logo">
-        </a>
-      </div>
-
-      <nav class="main-nav" aria-label="Main navigation">
+    <div class="nav">
+      <a href="index.html" aria-label="home" class="logo"><img src="Images/47e9737984de079_file_000000009db461fd9a258cbe5c39906c_wm.png" alt="Blessed Nation Ambassadors logo"></a>
+      <nav class="menu" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
         <a href="blog.html">Blog</a>
         <a href="gallery.html">Gallery</a>
-        <a href="donate.html" style="background:rgba(255,255,255,.95); color:#111; border-radius:999px; padding:7px 12px; font-weight:800">Donate</a>
+        <a href="donate.html" style="background:#fff;color:#111;border-radius:999px;padding:6px 10px;font-weight:800">Donate</a>
         <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero -->
-  <section class="hero" role="banner" aria-label="Blessed Nation Ambassadors hero">
+  <section class="hero" role="banner">
     <div class="hero-inner">
-      <h1>Together, We Restore Hope & Dignity</h1>
-      <p>Since 2017, Blessed Nation Ambassadors (founded by Lydia Waweru) reaches the less fortunate through feeding, youth mentorship, farmers & SMEs empowerment, and academic sponsorships for children living with disabilities.</p>
-      <p><a href="donate.html" class="btn-cta" aria-label="Donate now">Donate Now</a></p>
+      <h1>Together, we restore hope & dignity</h1>
+      <p>Since 2017 Blessed Nation Ambassadors (founded by Lydia Waweru) has served the less fortunate through feeding, mentorship, empowerment, and academic sponsorships for children living with disabilities.</p>
+      <!-- ONE clear CTA in hero only -->
+      <p><a class="btn-hero" href="donate.html">Donate Now</a></p>
     </div>
   </section>
 
-  <!-- About -->
+  <!-- About summary -->
   <section>
     <div class="wrap">
       <div class="about-box">
-        <h2>Who We Are</h2>
-        <p><strong>Lydia Waweru</strong> founded Blessed Nation Ambassadors in 2017 after experiencing poverty and hardship herself. Her story of resilience became the foundation for an organization committed to serving orphans, widows, street families, children living with disabilities, youth, farmers, and small business owners.</p>
-        <p>We focus on feeding programs, social support, mentorship, and <strong>academic sponsorship for children living with disabilities</strong>, ensuring they have the opportunity to learn and thrive.</p>
-        <div class="verse">“Religion that is pure and undefiled before God and the Father is this: to visit orphans and widows in their affliction, and to keep oneself unstained from the world.” — James 1:27</div>
+        <h2>About Blessed Nation Ambassadors</h2>
+        <p>Founded by Lydia Waweru in 2017, we walk with widows, orphans, street families, children with disabilities, youth, farmers and small business owners — providing food, education sponsorships, mentorship and skills so people can thrive.</p>
+        <p class="muted">“Religion that is pure and undefiled… to visit orphans and widows in their affliction.” — James 1:27</p>
       </div>
     </div>
   </section>
 
-  <!-- Services preview -->
-  <section aria-label="Our key programs">
-    <div class="wrap">
-      <h3 style="color:var(--brand); margin:0 0 14px">What We Do</h3>
-      <div class="grid">
-        <!-- Outreach -->
-        <article class="service-card" aria-labelledby="s-outreach">
-          <img src="Images/FB_IMG_1756775373683.jpg" alt="Street families outreach">
-          <div class="pad">
-            <h3 id="s-outreach">Visiting the Less Fortunate</h3>
-            <p class="muted">Regular visits and emotional support to orphans, widows, and street families — we bring food, prayers, and hope.</p>
-          </div>
-        </article>
-
-        <!-- Feeding -->
-        <article class="service-card" aria-labelledby="s-feeding">
-          <img src="Images/FB_IMG_1756760806122.jpg" alt="Feeding program">
-          <div class="pad">
-            <h3 id="s-feeding">Feeding Programs</h3>
-            <p class="muted">Community feeding drives that restore dignity and ensure children and families have a nutritious meal.</p>
-          </div>
-        </article>
-
-        <!-- Disability -->
-        <article class="service-card" aria-labelledby="s-disability">
-          <img src="Images/FB_IMG_1756735600172.jpg" alt="Children with disabilities support">
-          <div class="pad">
-            <h3 id="s-disability">Children with Disabilities</h3>
-            <p class="muted">Sponsorships and social support for children living with disabilities — academic fees, school materials, and community inclusion.</p>
-          </div>
-        </article>
-
-        <!-- Youth -->
-        <article class="service-card" aria-labelledby="s-youth">
-          <img src="Images/FB_IMG_1756736200372.jpg" alt="Youth empowerment">
-          <div class="pad">
-            <h3 id="s-youth">Youth Empowerment</h3>
-            <p class="muted">Mentorship, skills training and guidance to help young people rise and lead change in their communities.</p>
-          </div>
-        </article>
-
-        <!-- Farmers (text only) -->
-        <div class="text-card">
-          <h3>Farmers Support</h3>
-          <p class="muted">We support smallholder farmers with training, improved techniques, resources, and market linkages so they can produce more and earn better livelihoods.</p>
-        </div>
-
-        <!-- SMEs (text only) -->
-        <div class="text-card">
-          <h3>SMEs Empowerment</h3>
-          <p class="muted">Small business training and mentorship, helping entrepreneurs build resilient micro-businesses that create local jobs and incomes.</p>
-        </div>
-      </div>
-
-      <p class="center" style="text-align:center; margin-top:12px"><a class="btn-cta" href="services.html">Explore All Services</a></p>
-    </div>
-  </section>
-
-  <!-- Gallery preview -->
-  <section aria-label="Gallery preview">
-    <div class="wrap">
-      <h3 style="color:var(--brand); margin:0 0 14px">Moments of Impact</h3>
-      <div class="row">
-        <div class="thumb"><img src="Images/FB_IMG_1756735575300.jpg" alt="Gallery image 1"></div>
-        <div class="thumb"><img src="Images/FB_IMG_1756736071168.jpg" alt="Gallery image 2"></div>
-        <div class="thumb"><img src="Images/FB_IMG_1756736096847.jpg" alt="Gallery image 3"></div>
-        <div class="thumb"><img src="Images/FB_IMG_1756760616834.jpg" alt="Gallery image 4"></div>
-      </div>
-      <p style="text-align:center; margin-top:12px"><a class="btn-cta" href="gallery.html">View Full Gallery</a></p>
-    </div>
-  </section>
-
-  <!-- Blog preview (static) -->
-  <section aria-label="Blog preview">
-    <div class="wrap">
-      <h3 style="color:var(--brand); margin:0 0 14px">Stories & Updates</h3>
-      <div class="row">
-        <article class="service-card">
-          <img src="Images/FB_IMG_1756760496801.jpg" alt="A Meal of Hope">
-          <div class="pad"><h3>A Meal of Hope</h3><p class="muted">How feeding programs restore joy and strength to families.</p></div>
-        </article>
-        <article class="service-card">
-          <img src="Images/FB_IMG_1756735694791.jpg" alt="Youth Rising">
-          <div class="pad"><h3>Rising Youth</h3><p class="muted">Mentorship that unlocks potential and builds leaders.</p></div>
-        </article>
-        <article class="service-card">
-          <img src="Images/FB_IMG_1756761373248.jpg" alt="Love on the Streets">
-          <div class="pad"><h3>Love on the Streets</h3><p class="muted">Outreach moments that bring hope to street families.</p></div>
-        </article>
-      </div>
-      <p style="text-align:center; margin-top:12px"><a class="btn-cta" href="blog.html">Read More Stories</a></p>
-    </div>
-  </section>
-
-  <!-- Donate strip -->
+  <!-- Services (short preview, no extra CTAs) -->
   <section>
     <div class="wrap">
-      <div class="strip">
-        <div><strong>Give via M-Pesa Paybill:</strong> <b>400222</b> &nbsp;•&nbsp; <strong>Account No:</strong> <b>2407692#</b></div>
-        <div class="muted" style="margin-top:6px">Your gift feeds families, sponsors children living with disabilities academically, and empowers youth, farmers & SMEs.</div>
-        <div style="margin-top:10px"><a class="btn-cta" href="donate.html">Give Now</a></div>
+      <h3 style="color:var(--brand);margin:0 0 12px">Our Programs (summary)</h3>
+      <div class="grid">
+        <article class="card">
+          <img src="Images/FB_IMG_1756775373683.jpg" alt="Outreach">
+          <div class="pad"><h3>Outreach</h3><p class="muted">Visits and food for street families, orphans & widows.</p></div>
+        </article>
+
+        <article class="card">
+          <img src="Images/FB_IMG_1756760806122.jpg" alt="Feeding">
+          <div class="pad"><h3>Feeding Programs</h3><p class="muted">Regular feeding drives that restore strength and dignity.</p></div>
+        </article>
+
+        <article class="card">
+          <img src="Images/FB_IMG_1756735600172.jpg" alt="Disability">
+          <div class="pad"><h3>Disability Support</h3><p class="muted">Academic sponsorship & inclusion for children living with disabilities.</p></div>
+        </article>
+
+        <article class="card">
+          <img src="Images/FB_IMG_1756736200372.jpg" alt="Youth">
+          <div class="pad"><h3>Youth Empowerment</h3><p class="muted">Mentorship, training and guidance for young people.</p></div>
+        </article>
+
+        <div class="card pad">
+          <div style="padding:12px;">
+            <h3>Farmers Support</h3>
+            <p class="muted">Training, market linkages and resources to build sustainable farming livelihoods.</p>
+          </div>
+        </div>
+
+        <div class="card pad">
+          <div style="padding:12px;">
+            <h3>SMEs Empowerment</h3>
+            <p class="muted">Business skills and mentorship for small enterprises to grow.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+
+  <!-- Gallery preview (images only; no button) -->
+  <section>
+    <div class="wrap">
+      <h3 style="color:var(--brand); margin:0 0 12px">Moments of Impact</h3>
+      <div class="row">
+        <div class="thumb"><img src="Images/FB_IMG_1756735575300.jpg" alt="Gallery 1"></div>
+        <div class="thumb"><img src="Images/FB_IMG_1756736071168.jpg" alt="Gallery 2"></div>
+        <div class="thumb"><img src="Images/FB_IMG_1756736096847.jpg" alt="Gallery 3"></div>
+        <div class="thumb"><img src="Images/FB_IMG_1756760616834.jpg" alt="Gallery 4"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog preview (titles + short summary; no button) -->
+  <section>
+    <div class="wrap">
+      <h3 style="color:var(--brand); margin:0 0 12px">Stories & Updates</h3>
+      <div class="grid">
+        <div class="card"><img src="Images/FB_IMG_1756760496801.jpg" alt="Blog 1"><div class="pad"><h3>A Meal of Hope</h3><p class="muted">How our feeding program restores dignity.</p></div></div>
+        <div class="card"><img src="Images/FB_IMG_1756735694791.jpg" alt="Blog 2"><div class="pad"><h3>Rising Youth</h3><p class="muted">Mentorship that unlocks potential.</p></div></div>
+        <div class="card"><img src="Images/FB_IMG_1756761373248.jpg" alt="Blog 3"><div class="pad"><h3>Love on the Streets</h3><p class="muted">Outreach moments that bring hope.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Donate strip removed (only hero CTA available) -->
 
   <!-- Footer -->
   <footer>
-    <div class="wrap" style="display:flex;flex-direction:column;gap:6px;align-items:center">
-      <div>&copy; <span id="yr-js"></span> Blessed Nation Ambassadors. All Rights Reserved.</div>
-      <div>Email: <a href="mailto:blessednationambassadors@gmail.com">blessednationambassadors@gmail.com</a></div>
-      <div><a href="contact.html">Contact & Socials</a></div>
+    <div class="wrap">
+      <div style="padding:8px 0">&copy; <span id="yr"></span> Blessed Nation Ambassadors</div>
+      <div style="padding:6px 0">Email: <a href="mailto:blessednationambassadors@gmail.com" style="color:#cfe9ff">blessednationambassadors@gmail.com</a> · <a href="contact.html" style="color:#cfe9ff">Contact & Socials</a></div>
     </div>
   </footer>
 
-  <!-- Floating WhatsApp button (real look) -->
-  <a class="wa" href="https://wa.me/254712972035" target="_blank" aria-label="Chat with Blessed Nation Ambassadors on WhatsApp">
-    <!-- using Wikimedia-hosted svg to avoid adding extra image file; it renders like the WhatsApp logo -->
+  <!-- Floating WhatsApp -->
+  <a class="wa" href="https://wa.me/254712972035" target="_blank" aria-label="Chat on WhatsApp">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
   </a>
 
-  <!-- small scripts -->
   <script>
-    // footer year
-    document.getElementById('yr-js').textContent = new Date().getFullYear();
+    document.getElementById('yr').textContent = new Date().getFullYear();
   </script>
 </body>
-                                                                     </html>
+                                                                                                                                                                                   </html>
