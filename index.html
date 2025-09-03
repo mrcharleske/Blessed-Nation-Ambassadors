@@ -1,47 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blessed Nation Ambassadors</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="Images/47e9737984de079_file_000000009db461fd9a258cbe5c39906c_wm.png">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to Pillars of Hope – a community-based organization empowering lives through education, charity, and sustainable development.">
+  <meta name="keywords" content="Pillars of Hope, charity, Kenya CBO, education, community development, donations">
+  <meta name="author" content="Pillars of Hope">
+  <title>Pillars of Hope - Home</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #006699;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      animation: fadeDown 1.5s ease-in-out;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: url("images/home.jpg") no-repeat center center/cover;
+      color: white;
+      animation: fadeUp 2s ease-in-out;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: auto;
+    }
+    .content {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeIn 2s ease-in-out;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    /* Animations */
+    @keyframes fadeDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="blog-gallery.html">Stories & Gallery</a></li>
-                <li><a href="donate.html">Donate</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Pillars of Hope</h1>
+    <p>Empowering Lives Through Hope and Action</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="donate.html">Donate</a>
+    </nav>
+  </header>
 
-    <section class="section">
-        <img src="Images/FB_IMG_1756775549013.jpg" alt="Hero Image" style="width:100%; max-height:400px; object-fit:cover;">
-        <h1>Welcome to Blessed Nation Ambassadors</h1>
-        <p>Empowering communities through compassion and action since 2017.</p>
-    </section>
+  <section class="hero">
+    <h1>Welcome to Pillars of Hope</h1>
+    <p>We are dedicated to transforming lives through education, charity, and sustainable community development.</p>
+  </section>
 
-    <section class="section">
-        <h2>Our Mission</h2>
-        <p>Visiting the less fortunate, feeding street families, sponsoring children with disabilities, empowering youth, farmers, and SMEs.</p>
-        <div class="social-buttons">
-            <a href="https://www.facebook.com/share/1B4b4DEPi8/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/blessed_nation_ambassadors?igsh=MWN6dTJhNDZzeHg5Nw==" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://x.com/BlessedNationKe?t=IrKMUvJtHRzNLemBRn8ZFA&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://vm.tiktok.com/ZMHtD2sLwA353-B6ZDf/" target="_blank"><i class="fab fa-tiktok"></i></a>
-        </div>
-    </section>
+  <section class="content">
+    <h2>Who We Are</h2>
+    <p>Pillars of Hope is a registered community-based organization (CBO) with over two hundred active members. We work together to uplift the needy, sponsor children’s education, and support sustainable projects for long-term impact.</p>
 
-    <a href="https://wa.me/+254712972035" class="whatsapp-float"><i class="fab fa-whatsapp"></i></a>
+    <h2>What We Do</h2>
+    <p>From providing school sponsorships to running community projects, we aim to give hope and opportunities to those who need them the most.</p>
+  </section>
 
-    <script src="js/script.js"></script>
+  <footer>
+    <p>&copy; 2025 Pillars of Hope | All Rights Reserved</p>
+  </footer>
 </body>
 </html>
