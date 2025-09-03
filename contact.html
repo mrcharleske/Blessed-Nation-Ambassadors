@@ -1,51 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Blessed Nation Ambassadors</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="Images/47e9737984de079_file_000000009db461fd9a258cbe5c39906c_wm.png">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with Blessed Nation Ambassadors. Reach us via email, WhatsApp, or social media, or fill out our contact form.">
+  <meta name="keywords" content="Contact Blessed Nation Ambassadors, NGO Kenya, CBO contacts, charity contacts">
+  <meta name="author" content="Blessed Nation Ambassadors">
+  <title>Contact Us - Blessed Nation Ambassadors</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      animation: fadeDown 1.5s ease-in-out;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: url("images/lydia.jpg") no-repeat center center/cover;
+      color: white;
+      animation: fadeUp 2s ease-in-out;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .content {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeIn 2s ease-in-out;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    form button {
+      background: #2575fc;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    form button:hover {
+      background: #6a11cb;
+    }
+    .socials {
+      margin-top: 30px;
+      text-align: center;
+    }
+    .socials a {
+      display: inline-block;
+      margin: 10px;
+      text-decoration: none;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: transform 0.3s, background 0.3s;
+    }
+    .socials a:hover {
+      transform: scale(1.05);
+    }
+    .facebook { background: #3b5998; }
+    .instagram { background: #e4405f; }
+    .twitter { background: #1da1f2; }
+    .tiktok { background: #000000; }
+    .whatsapp { background: #25d366; }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    /* Floating WhatsApp */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+      z-index: 1000;
+    }
+    .floating-whatsapp:hover {
+      transform: scale(1.1);
+    }
+
+    /* Animations */
+    @keyframes fadeDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="blog-gallery.html">Stories & Gallery</a></li>
-                <li><a href="donate.html">Donate</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Blessed Nation Ambassadors</h1>
+    <p>Empowering Lives Through Hope and Action</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="blog-gallery.html">Blog & Gallery</a>
+      <a href="donate.html">Donate</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-    <section class="section">
-        <h1>Contact Us</h1>
-        <p>Email: blessednationambassadors@gmail.com<br>WhatsApp: +254712972035</p>
-        <div class="social-buttons">
-            <a href="https://www.facebook.com/share/1B4b4DEPi8/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/blessed_nation_ambassadors?igsh=MWN6dTJhNDZzeHg5Nw==" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://x.com/BlessedNationKe?t=IrKMUvJtHRzNLemBRn8ZFA&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://vm.tiktok.com/ZMHtD2sLwA353-B6ZDf/" target="_blank"><i class="fab fa-tiktok"></i></a>
-        </div>
-    </section>
+  <section class="hero">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you! Fill the form below or reach us directly.</p>
+  </section>
 
-    <section class="section">
-        <h2>Send a Message</h2>
-        <form action="https://formspree.io/f/mzzavwvw" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
+  <section class="content">
+    <form action="https://formspree.io/f/mzzavwvw" method="POST">
+      <input type="text" name="name" placeholder="Your Full Name" required>
+      <input type="email" name="_replyto" placeholder="Your Email Address" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
 
-    <a href="https://wa.me/+254712972035" class="whatsapp-float"><i class="fab fa-whatsapp"></i></a>
+    <div class="socials">
+      <h2>Connect with Us</h2>
+      <a href="https://www.facebook.com/share/1B4b4DEPi8/" class="facebook">Facebook</a>
+      <a href="https://www.instagram.com/blessed_nation_ambassadors?igsh=MWN6dTJhNDZzeHg5Nw==" class="instagram">Instagram</a>
+      <a href="https://x.com/BlessedNationKe?t=IrKMUvJtHRzNLemBRn8ZFA&s=09" class="twitter">Twitter/X</a>
+      <a href="https://vm.tiktok.com/ZMHtD2sLwA353-B6ZDf/" class="tiktok">TikTok</a>
+      <a href="https://wa.me/254712972035" class="whatsapp">WhatsApp</a>
+    </div>
+  </section>
 
-    <script src="js/script.js"></script>
+  <footer>
+    <p>&copy; 2025 Blessed Nation Ambassadors | All Rights Reserved</p>
+    <p>Email: blessednationambassadors@gmail.com</p>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/254712972035" class="floating-whatsapp">💬</a>
 </body>
 </html>
