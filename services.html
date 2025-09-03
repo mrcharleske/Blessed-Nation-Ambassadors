@@ -1,65 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - Blessed Nation Ambassadors</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="Images/47e9737984de079_file_000000009db461fd9a258cbe5c39906c_wm.png">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the services of Blessed Nation Ambassadors including feeding street families, supporting children with disabilities, youth empowerment, and community development.">
+  <meta name="keywords" content="Blessed Nation Ambassadors services, youth empowerment, feeding families, supporting children with disabilities, SMEs empowerment, farmers empowerment">
+  <meta name="author" content="Blessed Nation Ambassadors">
+  <title>Our Services - Blessed Nation Ambassadors</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      animation: fadeDown 1.5s ease-in-out;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: url("images/outreach.jpg") no-repeat center center/cover;
+      color: white;
+      animation: fadeUp 2s ease-in-out;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .services {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    .service {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+      border-radius: 10px;
+      overflow: hidden;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .service:nth-child(even) {
+      background: #f0f4ff;
+    }
+    .service:nth-child(odd) {
+      background: #ffffff;
+    }
+    .service img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      object-fit: cover;
+    }
+    .service-content {
+      flex: 1;
+      padding: 20px;
+    }
+    .service-content h2 {
+      color: #2575fc;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    /* Floating WhatsApp */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+      z-index: 1000;
+    }
+    .floating-whatsapp:hover {
+      transform: scale(1.1);
+    }
+
+    /* Animations */
+    @keyframes fadeDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="blog-gallery.html">Stories & Gallery</a></li>
-                <li><a href="donate.html">Donate</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Blessed Nation Ambassadors</h1>
+    <p>Empowering Lives Through Hope and Action</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="blog-gallery.html">Blog & Gallery</a>
+      <a href="donate.html">Donate</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-    <section class="section">
-        <h1>Our Services</h1>
-        <p>We provide a range of initiatives to support vulnerable communities:</p>
-    </section>
+  <section class="hero">
+    <h1>Our Services</h1>
+    <p>We are committed to transforming lives through outreach, support, and empowerment.</p>
+  </section>
 
-    <section class="section">
-        <h2>Community Outreach</h2>
-        <img src="Images/FB_IMG_1756775373683.jpg" alt="Outreach" style="width:100%; max-width:600px;">
-        <p>Visiting the less fortunate and providing essential support.</p>
-    </section>
+  <section class="services">
+    <div class="service">
+      <img src="images/feeding.jpg" alt="Feeding Street Families">
+      <div class="service-content">
+        <h2>Feeding Street Families</h2>
+        <p>We reach out to street families, providing them with meals, hope, and a sense of belonging. This initiative restores dignity and gives a lifeline to those who feel forgotten.</p>
+      </div>
+    </div>
 
-    <section class="section">
-        <h2>Feeding Programs</h2>
-        <img src="Images/FB_IMG_1756760806122.jpg" alt="Feeding Street Families" style="width:100%; max-width:600px;">
-        <p>Feeding street families and offering guidance for better lives.</p>
-    </section>
+    <div class="service">
+      <img src="images/disability.jpg" alt="Supporting Children with Disabilities">
+      <div class="service-content">
+        <h2>Sponsoring Children with Disabilities</h2>
+        <p>We believe that every child deserves a chance. Through academic sponsorships and social support, we uplift children living with disabilities, enabling them to thrive in society.</p>
+      </div>
+    </div>
 
-    <section class="section">
-        <h2>Support for Children with Disabilities</h2>
-        <img src="Images/FB_IMG_1756735600172.jpg" alt="Disability Support" style="width:100%; max-width:600px;">
-        <p>Sponsoring academic and social development for children living with disabilities.</p>
-    </section>
-
-    <section class="section">
+    <div class="service">
+      <img src="images/youth.jpg" alt="Youth Empowerment">
+      <div class="service-content">
         <h2>Youth Empowerment</h2>
-        <img src="Images/FB_IMG_1756736200372.jpg" alt="Youth Empowerment" style="width:100%; max-width:600px;">
-        <p>Programs to build skills and opportunities for young people.</p>
-    </section>
+        <p>The youth are the future. We run mentorship and empowerment programs to equip young people with skills, confidence, and opportunities to lead and create change.</p>
+      </div>
+    </div>
 
-    <section class="section">
-        <h2>Farmers & SMEs Empowerment</h2>
-        <img src="Images/FB_IMG_1756760496801.jpg" alt="Farmers and SMEs" style="width:100%; max-width:600px;"> <!-- Assumed path for farmers/smes -->
-        <p>Supporting farmers and small businesses with resources and training.</p>
-    </section>
+    <div class="service">
+      <div class="service-content">
+        <h2>Farmers Empowerment</h2>
+        <p>We support local farmers through training and resource provision, enabling them to adopt sustainable practices and increase productivity. Agriculture is a pillar for community survival and growth.</p>
+      </div>
+    </div>
 
-    <a href="https://wa.me/+254712972035" class="whatsapp-float"><i class="fab fa-whatsapp"></i></a>
+    <div class="service">
+      <div class="service-content">
+        <h2>SMEs Empowerment</h2>
+        <p>Small and Medium Enterprises are the backbone of economic growth. We offer guidance, training, and connections to empower SMEs to thrive and create employment opportunities.</p>
+      </div>
+    </div>
+  </section>
 
-    <script src="js/script.js"></script>
+  <footer>
+    <p>&copy; 2025 Blessed Nation Ambassadors | All Rights Reserved</p>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/254712972035" class="floating-whatsapp">💬</a>
 </body>
 </html>
