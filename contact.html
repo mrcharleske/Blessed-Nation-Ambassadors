@@ -1,131 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - Blessed Nation Ambassadors</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    .contact-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-      padding: 40px 20px;
-    }
-    .contact-info {
-      background: #f9f9f9;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
-    }
-    .contact-info h2 {
-      margin-bottom: 15px;
-      color: #333;
-    }
-    .contact-info p {
-      margin: 10px 0;
-    }
-    .contact-form {
-      background: #f1f1f1;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
-    }
-    .contact-form form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-    .contact-form input, .contact-form textarea {
-      padding: 12px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-      width: 100%;
-    }
-    .contact-form button {
-      background: #007bff;
-      color: white;
-      padding: 12px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-    .contact-form button:hover {
-      background: #0056b3;
-    }
-    .map {
-      margin: 30px auto;
-      max-width: 100%;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Blessed Nation Ambassadors</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="Images/47e9737984de079_file_000000009db461fd9a258cbe5c39906c_wm.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog-gallery.html">Stories & Gallery</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Header -->
-  <header>
-    <img src="Images/logo.png" alt="Blessed Nation Ambassadors Logo">
-    <h1>Blessed Nation Ambassadors</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="donations.html">Donations</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <section class="section">
+        <h1>Contact Us</h1>
+        <p>Email: blessednationambassadors@gmail.com<br>WhatsApp: +254712972035</p>
+        <div class="social-buttons">
+            <a href="https://www.facebook.com/share/1B4b4DEPi8/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/blessed_nation_ambassadors?igsh=MWN6dTJhNDZzeHg5Nw==" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/BlessedNationKe?t=IrKMUvJtHRzNLemBRn8ZFA&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://vm.tiktok.com/ZMHtD2sLwA353-B6ZDf/" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </section>
 
-  <!-- Hero Section -->
-  <section class="hero" style="background: url('Images/FB_IMG_1756775552045.jpg') no-repeat center center/cover;">
-    <h1>Get in Touch</h1>
-    <p>We’d love to hear from you — let’s connect today!</p>
-  </section>
+    <section class="section">
+        <h2>Send a Message</h2>
+        <form action="https://formspree.io/f/mzzavwvw" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
 
-  <!-- Contact Section -->
-  <section class="contact-container">
-    <!-- Contact Info -->
-    <div class="contact-info">
-      <h2>Contact Information</h2>
-      <p><strong>Phone:</strong> +254 712 972 035</p>
-      <p><strong>Email:</strong> blessednationambassadors@gmail.com</p>
-      <p><strong>Location:</strong> Nairobi, Kenya</p>
-    </div>
+    <a href="https://wa.me/+254712972035" class="whatsapp-float"><i class="fab fa-whatsapp"></i></a>
 
-    <!-- Contact Form -->
-    <div class="contact-form">
-      <h2>Send Us a Message</h2>
-      <form action="https://formspree.io/f/mzzavwvw" method="POST">
-        <input type="text" name="name" placeholder="Your Full Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Google Map -->
-  <div class="map">
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.858016195624!2d36.82194631534925!3d-1.292065635999819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1730d9e6d3b7%3A0x53f9ef4a2f1c0d62!2sNairobi!5e0!3m2!1sen!2ske!4v1693900000000!5m2!1sen!2ske" 
-      width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
-    </iframe>
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Blessed Nation Ambassadors. All rights reserved.</p>
-    <p>Come, let’s make this work. When we come together, great things happen.</p>
-  </footer>
-
-  <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/254712972035" class="whatsapp-float" target="_blank">
-    <i class="fab fa-whatsapp"></i>💬
-  </a>
-
+    <script src="js/script.js"></script>
 </body>
 </html>
