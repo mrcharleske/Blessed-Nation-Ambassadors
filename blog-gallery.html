@@ -1,74 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stories & Gallery - Blessed Nation Ambassadors</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="Images/47e9737984de079_file_000000009db461fd9a258cbe5c39906c_wm.png">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Read inspiring stories, updates, and view gallery photos from Blessed Nation Ambassadors as we empower communities and spread hope.">
+  <meta name="keywords" content="Blessed Nation Ambassadors blog, outreach gallery, community empowerment, hope stories, feeding families, youth empowerment">
+  <meta name="author" content="Blessed Nation Ambassadors">
+  <title>Blog & Gallery - Blessed Nation Ambassadors</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      animation: fadeDown 1.5s ease-in-out;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: url("images/blog-bg.jpg") no-repeat center center/cover;
+      color: white;
+      animation: fadeUp 2s ease-in-out;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+    .content {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    .blog {
+      margin-bottom: 50px;
+    }
+    .blog h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2575fc;
+    }
+    .post {
+      background: #fff;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    .post h3 {
+      color: #6a11cb;
+      margin-bottom: 10px;
+    }
+    .post p {
+      margin-bottom: 0;
+    }
+    .gallery {
+      margin-top: 50px;
+    }
+    .gallery h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2575fc;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+    .gallery-grid img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    /* Floating WhatsApp */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+      z-index: 1000;
+    }
+    .floating-whatsapp:hover {
+      transform: scale(1.1);
+    }
+
+    /* Animations */
+    @keyframes fadeDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="blog-gallery.html">Stories & Gallery</a></li>
-                <li><a href="donate.html">Donate</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Blessed Nation Ambassadors</h1>
+    <p>Stories of Hope and Transformation</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="blog-gallery.html">Blog & Gallery</a>
+      <a href="donate.html">Donate</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-    <section class="section">
-        <h1>Stories & Gallery</h1>
-        <p>Explore our impact through images and stories from our initiatives.</p>
-    </section>
+  <section class="hero">
+    <h1>Blog & Gallery</h1>
+    <p>Discover inspiring stories and moments from our outreach programs.</p>
+  </section>
 
-    <section class="section gallery">
-        <div>
-            <img src="Images/FB_IMG_1756760496801.jpg" alt="Blog 1">
-            <p>Empowering youth in recent workshops.</p>
-        </div>
-        <div>
-            <img src="Images/FB_IMG_1756735694791.jpg" alt="Blog 2">
-            <p>Feeding program highlights.</p>
-        </div>
-        <div>
-            <img src="Images/FB_IMG_1756761373248.jpg" alt="Blog 3">
-            <p>Community outreach event.</p>
-        </div>
-        <div>
-            <img src="Images/FB_IMG_1756735575300.jpg" alt="Gallery 1">
-            <p>Supporting children with disabilities.</p>
-        </div>
-        <div>
-            <img src="Images/FB_IMG_1756736071168.jpg" alt="Gallery 2">
-            <p>Farmers empowerment session.</p>
-        </div>
-        <div>
-            <img src="Images/FB_IMG_1756736096847.jpg" alt="Gallery 3">
-            <p>SMEs training day.</p>
-        </div>
-        <div>
-            <img src="Images/FB_IMG_1756760616834.jpg" alt="Gallery 4">
-            <p>Street families guidance program.</p>
-        </div>
-        <div>
-            <img src="Images/FB_IMG_1756761227203.jpg" alt="Gallery 5">
-            <p>Recent visits to the less fortunate.</p>
-        </div>
-        <div>
-            <img src="Images/FB_IMG_1756775561114.jpg" alt="Gallery 6">
-            <p>Team in action.</p>
-        </div>
-    </section>
+  <section class="content">
+    <div class="blog">
+      <h2>Latest Blog Posts</h2>
+      <div class="post">
+        <h3>Feeding Street Families with Love</h3>
+        <p>Last month, our team reached over 200 street families in Nairobi, offering them food, prayer, and encouragement. It was a day filled with hope and connection.</p>
+      </div>
+      <div class="post">
+        <h3>Youth Empowerment Training</h3>
+        <p>Our youth empowerment program saw over 50 young people trained in entrepreneurship and leadership. Many are now starting small businesses with confidence.</p>
+      </div>
+      <div class="post">
+        <h3>Supporting Children with Disabilities</h3>
+        <p>We sponsored five children with school fees and learning materials, ensuring they continue their education despite challenges.</p>
+      </div>
+    </div>
 
-    <a href="https://wa.me/+254712972035" class="whatsapp-float"><i class="fab fa-whatsapp"></i></a>
+    <div class="gallery">
+      <h2>Photo Gallery</h2>
+      <div class="gallery-grid">
+        <img src="images/outreach1.jpg" alt="Outreach Event 1">
+        <img src="images/outreach2.jpg" alt="Outreach Event 2">
+        <img src="images/youth-training.jpg" alt="Youth Training">
+        <img src="images/family-support.jpg" alt="Family Support">
+        <img src="images/community.jpg" alt="Community Empowerment">
+        <img src="images/children.jpg" alt="Children Support">
+      </div>
+    </div>
+  </section>
 
-    <script src="js/script.js"></script>
+  <footer>
+    <p>&copy; 2025 Blessed Nation Ambassadors | All Rights Reserved</p>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/254712972035" class="floating-whatsapp">💬</a>
 </body>
-</html>
+    </html>
