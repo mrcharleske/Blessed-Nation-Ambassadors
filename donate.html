@@ -1,59 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate - Blessed Nation Ambassadors</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="Images/47e9737984de079_file_000000009db461fd9a258cbe5c39906c_wm.png">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Support Blessed Nation Ambassadors by donating. Choose a cause and help us empower children, youth, farmers, SMEs, and communities.">
+  <meta name="keywords" content="Donate Blessed Nation Ambassadors, Paybill, PayPal donation, Kenya charity, support children, support families">
+  <meta name="author" content="Blessed Nation Ambassadors">
+  <title>Donate - Blessed Nation Ambassadors</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      animation: fadeDown 1.5s ease-in-out;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: url("images/donate.jpg") no-repeat center center/cover;
+      color: white;
+      animation: fadeUp 2s ease-in-out;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .content {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .donate-box {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+    .donate-box h2 {
+      color: #2575fc;
+    }
+    .donate-box p {
+      margin-bottom: 10px;
+    }
+    .donate-box select, .donate-box input, .donate-box button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    .donate-box button {
+      background: #6a11cb;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      border: none;
+      transition: background 0.3s;
+    }
+    .donate-box button:hover {
+      background: #2575fc;
+    }
+    .paypal-button {
+      display: inline-block;
+      margin-top: 15px;
+      background: #ffc439;
+      padding: 12px 20px;
+      border-radius: 8px;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .paypal-button:hover {
+      background: #ffb347;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    /* Floating WhatsApp */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+      z-index: 1000;
+    }
+    .floating-whatsapp:hover {
+      transform: scale(1.1);
+    }
+
+    /* Animations */
+    @keyframes fadeDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="blog-gallery.html">Stories & Gallery</a></li>
-                <li><a href="donate.html">Donate</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Blessed Nation Ambassadors</h1>
+    <p>Empowering Lives Through Hope and Action</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="blog-gallery.html">Blog & Gallery</a>
+      <a href="donate.html">Donate</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-    <section class="section">
-        <h1>Support Our Cause</h1>
-        <img src="Images/FB_IMG_1756760757194.jpg" alt="Donate Image" style="width:100%; max-width:600px;">
-        <p>Your donation helps us feed, empower, and support those in need. Choose a cause below.</p>
-    </section>
+  <section class="hero">
+    <h1>Donate</h1>
+    <p>Your contribution makes a real difference in the lives of many.</p>
+  </section>
 
-    <section class="section">
-        <h2>Donate via M-Pesa</h2>
-        <p>PayBill No: [Your PayBill No. Here]<br>Account No: [Your Account No. Here]</p>
-        <img src="Images/FB_IMG_1756735909931.jpg" alt="PayBill QR" style="width:200px;">
-    </section>
+  <section class="content">
+    <div class="donate-box">
+      <h2>Donation Options</h2>
+      <p><strong>Paybill No.:</strong> 123456</p>
+      <p><strong>Account No.:</strong> 987654</p>
+      
+      <label for="cause">Choose a Cause to Support:</label>
+      <select id="cause" name="cause">
+        <option value="feeding">Feeding Street Families</option>
+        <option value="children">Sponsoring Children with Disability</option>
+        <option value="youth">Youth Empowerment</option>
+        <option value="farmers">Farmers Empowerment</option>
+        <option value="smes">SMEs Empowerment</option>
+      </select>
 
-    <section class="section">
-        <h2>International Donations via PayPal</h2>
-        <form action="https://www.paypal.com/donate" method="post" target="_top">
-            <input type="hidden" name="hosted_button_id" value="[Your PayPal Button ID or use email]">
-            <button type="submit">Donate with PayPal</button>
-        </form>
-        <p>Select a cause:</p>
-        <select>
-            <option>Feeding Street Families</option>
-            <option>Sponsoring Children with Disabilities</option>
-            <option>Youth Empowerment</option>
-            <option>Farmers Empowerment</option>
-            <option>SMEs Empowerment</option>
-            <option>General Support</option>
-        </select>
-    </section>
+      <label for="amount">Enter Donation Amount (KES):</label>
+      <input type="number" id="amount" name="amount" placeholder="e.g., 1000">
 
-    <a href="https://wa.me/+254712972035" class="whatsapp-float"><i class="fab fa-whatsapp"></i></a>
+      <button type="button">Donate Now</button>
 
-    <script src="js/script.js"></script>
+      <a href="https://www.paypal.com/donate" class="paypal-button" target="_blank">Donate with PayPal</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Blessed Nation Ambassadors | All Rights Reserved</p>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/254712972035" class="floating-whatsapp">💬</a>
 </body>
 </html>
